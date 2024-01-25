@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Courses Details By Vishwas:-</p>
+
+    <!-- Update your component's HTML file, e.g., list.component.html -->
+    <div *ngFor="let items of courses" class="course-container">
+      <ul>
+        <li>ID: {{ items.id }}</li>
+        <li>Name: {{ items.name }}</li>
+        <li>Description: {{ items.description }}</li>
+        <li>Author: {{ items.author }}</li>
+      </ul>
+    </div>
+  </body>
+</html>

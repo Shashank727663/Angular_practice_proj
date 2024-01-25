@@ -1,0 +1,38 @@
+
+<div>
+    <h2>Contribute here!</h2>
+    <form [formGroup] = "ContributionForm">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input [class.is-invalid]="ContributionForm!.get('Name')!.invalid && ContributionForm!.get('Name')!.touched" formControlName="Name" type="text" class="formcontrol">
+            <div class="alert alert-danger" *ngIf="ContributionForm!.get('Name')!.invalid && ContributionForm!.get('Name')!.touched">
+                <small *ngIf="ContributionForm!.get('Name')!.errors?.['required']">Name is required</small>
+                <small *ngIf="ContributionForm!.get('Name')!.errors?.['minlength']">Name should be at least 3 characters</small>
+                <small *ngIf="ContributionForm!.get('Name')!.errors?.['forbiddenName']">Name not allowed</small>
+        </div>
+        </div>
+
+        <div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea formControlName = "Description" class="form-control" rows="3"></textarea>
+            <small *ngIf="ContributionForm!.get('Description')!.errors?.['password']">Description not allowed</small>
+        </div>
+
+
+        
+        <div class="form-group">
+            <label for="website">Website</label>
+            <input formControlName = "Website" type="text" class="form-control">    
+        </div>
+        <div class="form-group">
+            <button type="submit" [disabled] = '!ContributionForm!.valid' class="submit" (click)="onSubmit()">Submit</button>
+            <button type="button" class = "submit" (click) = "loadData()">sampleData</button>
+        </div>
+    </form>
+
+    {{ContributionForm.value | json}}
+</div>

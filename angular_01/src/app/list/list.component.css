@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #3498db; /* Example background color for the navbar */
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff; /* Example text color */
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: #2980b9; /* Example hover background color */
+  }
+  
+
+  /* Add these styles to your list.component.css file */
+.students-container {
+  background-color: #f0f0f0; /* Background color of the container */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 8px; /* Border radius for rounded corners */
+  padding: 20px; /* Padding inside the container */
+  margin-bottom: 20px; /* Margin at the bottom for spacing */
+}
+
+.students-container p {
+  font-size: 18px; /* Font size for the "Students" heading */
+  font-weight: bold; /* Bold text for emphasis */
+  margin-bottom: 10px; /* Margin below the heading */
+}
+
+.students-list {
+  list-style-type: none; /* Remove list bullets */
+  padding: 0; /* Remove default list padding */
+}
+
+.students-list li {
+  margin-bottom: 8px; /* Margin between each list item */
+}
+
+/* Optional: Hover effect for better interactivity */
+.students-list li:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}

@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Angular",
+      "description": "A TypeScript-based open-source framework for building client-side applications.",
+      "website": "https://angular.io/"
+    },
+    {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces, often used for building single-page applications.",
+      "website": "https://reactjs.org/"
+    },
+    {
+      "name": "Vue.js",
+      "description": "A progressive JavaScript framework used for building user interfaces.",
+      "website": "https://vuejs.org/"
+    },
+    {
+      "name": "Express.js",
+      "description": "A fast, unopinionated, minimalist web framework for Node.js used to build web applications and APIs.",
+      "website": "https://expressjs.com/"
+    },
+    {
+      "name": "Django",
+      "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "website": "https://www.djangoproject.com/"
+    },
+    {
+      "name": "Ruby on Rails",
+      "description": "A web application framework written in Ruby under the MIT License. It is a server-side web application framework that follows the Model-View-Controller (MVC) pattern.",
+      "website": "https://rubyonrails.org/"
+    },
+    {
+      "name": "Flask",
+      "description": "A lightweight Python web framework that is easy to learn and quick to get started with.",
+      "website": "https://flask.palletsprojects.com/"
+    },
+    {
+      "name": "Spring Boot",
+      "description": "An extension of the Spring framework that simplifies the development of production-ready applications with a focus on convention over configuration.",
+      "website": "https://spring.io/projects/spring-boot"
+    }
+  ]
+  

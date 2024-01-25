@@ -1,0 +1,95 @@
+<div class="buttons">
+  <button type="button" (click)="HandleRegister()">Register</button>
+  <button type="button" (click)="HandleContribute()">Contribute</button>
+</div>
+
+<!-- First Name: John
+Last Name: Doe
+Age: 20
+Grade: A -->
+
+<div *ngIf="click1 === true">
+  <h1>Registration form</h1>
+
+  
+
+  <hr />
+  <form #userForm="ngForm" (ngSubmit) = "onSubmit()">
+    {{ userForm.value | json }}
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        required
+        #name="ngModel"
+        [class.is-invalid]="name.invalid && !name.touched"
+        name="firstName"
+        class="form-control"
+        [(ngModel)]="StudentModel.firstName"
+      />
+        <small class="text-danger" [class.d-none]="name.valid || name.untouched">
+            First Name is required.</small>
+    </div>
+
+    <div class="form-group">
+      <label>Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="Last Name"
+        required
+        #lname = "ngModel"
+        [(ngModel)]="StudentModel.lastName"
+      />
+      <small class="text-danger" [class.d-none]="lname.valid || lname.untouched">
+        last Name is required.</small>
+    </div>
+
+    <div class="form-group">
+      <label>Age</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="Age"
+        #age = "ngModel"
+        [(ngModel)]="StudentModel.age"
+      />
+        <small class="text-danger" *ngIf="age.invalid && (age.dirty || age.touched)">
+            Age is required.</small>
+
+            <small class = "text-danger" *ngIf="!age.errors">
+
+            </small>
+    </div>
+
+    <div class="form-group">
+      <label>Grade</label>
+      <select
+        required
+        #Grade="ngModel"
+        [class.is-invalid]="Grade.invalid"
+        id="grade"
+        name="Grade"
+        [(ngModel)]="StudentModel.grade"
+      >
+      <option value=""> Assign Grade</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="F">F</option>
+      </select>
+      <small (blur) = "validateGrade(Grade.value)"class="text-danger" [class.d-none]="GradeHasError ||   Grade.touched">
+        Selecting option is required.
+      </small>
+    </div>
+
+    <div class="form-group">
+      <button [disabled]="userForm.form.invalid" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<div *ngIf="click2 === true">Contribution form
+    <hr>
+    <p><app-contribution></app-contribution></p>
+</div>

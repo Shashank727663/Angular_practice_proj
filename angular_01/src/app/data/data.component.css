@@ -1,0 +1,20 @@
+/* Add these styles to your data.component.css file */
+.web-framework-container {
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 8px; /* Border radius for rounded corners */
+    padding: 15px; /* Padding inside the container */
+    margin-bottom: 15px; /* Margin at the bottom for spacing */
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .web-framework-container p {
+    margin: 8px 0; /* Margin between each paragraph */
+    font-size: 16px; /* Font size */
+  }
+  
+  /* Optional: Hover effect for better interactivity */
+  .web-framework-container:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+  

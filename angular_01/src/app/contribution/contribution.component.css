@@ -1,0 +1,62 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Optional: Style the input when it is focused */
+input:focus {
+    outline: none;
+    border-color: #3498db; /* Example color for focus state */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Example box shadow for focus state */
+}
+
+
+/* Add this CSS to your stylesheets */
+.form-group {
+    margin-top: 20px;
+}
+
+.submit {
+    background-color: transparent;
+    border: 2px solid #3498db; /* Border color */
+    color: #3498db; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #3498db; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+
+.is-invalid {
+    border-color: #e74c3c; /* Red color for invalid state */
+}
+
+/* Apply the 'text-danger' class to the <small> element */
+.text-danger {
+    color: red; /* or any other styling you want for the 'text-danger' class */
+  }
+  
+  /* Apply the 'd-none' class based on the condition */
+  .text-danger.d-none {
+    display: none;
+  }
+  

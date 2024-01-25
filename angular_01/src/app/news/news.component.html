@@ -1,0 +1,14 @@
+<!-- news.component.html -->
+<h1>Latest News</h1>
+<div *ngFor="let article of ApiResponse?.articles">
+  <div class="article-container">
+    <h2>{{ article.title }}</h2>
+    <p><strong>Author:</strong> {{ article.author }}</p>
+    <p><strong>Description:</strong> {{ article.description }}</p>
+    <p><strong>Published At:</strong> {{ article.publishedAt }}</p>
+    <p><strong>Content:</strong> {{ article.content }}</p>
+    <img [src]="article.urlToImage" alt="{{ article.title }}" />
+    <a [href]="article.url" target="_blank">Read More</a>
+    <hr />
+  </div>
+</div>

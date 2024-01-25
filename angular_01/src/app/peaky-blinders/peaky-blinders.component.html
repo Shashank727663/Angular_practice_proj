@@ -1,0 +1,22 @@
+<!-- peaky-blinders.component.html -->
+
+<div *ngIf="ApiResponse && ApiResponse.seasons.length > 0">
+    <h1>TV Show Seasons</h1>
+  
+    <div *ngFor="let season of ApiResponse.seasons">
+      <h2>Season {{ season.season_number }}</h2>
+  
+      <div *ngFor="let episode of season.episodes">
+        <div class="episode-container">
+          <h3>Episode {{ episode.episode_number }}</h3>
+          <p><strong>Title:</strong> {{ episode.title }}</p>
+          <p><strong>Description:</strong> {{ episode.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="ApiResponse&& ApiResponse.seasons.length === 0">
+    <p>No content available.</p>
+  </div>
+  

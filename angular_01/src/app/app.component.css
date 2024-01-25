@@ -1,0 +1,41 @@
+/* my-app.component.css */
+.logo {
+    width: 10%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-right: 4%;
+    display: inline-block; /* Adjusted margin for right side */
+  }
+  
+  h1 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    font-size: 2.5em;
+    font-weight: 300;
+    
+  }
+  
+
+  /* styles.css (or your preferred style file) */
+
+.navigation {
+  display: flex;
+  background-color: #333; /* Background color of the navbar */
+  padding: 10px;
+}
+
+.navigation a {
+  color: white; /* Text color of the links */
+  text-decoration: none; /* Remove underlines from links */
+  margin: 0 15px; /* Adjust spacing between links */
+  font-size: 16px; /* Font size of the links */
+}
+
+.navigation a:hover {
+  color: #ffcc00; /* Change text color on hover */
+}
+
